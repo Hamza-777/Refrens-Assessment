@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, unmountComponentAtNode } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
-import App from './App';
+import Home from '../Pages/Home';
 
 let container = null;
 beforeEach(() => {
@@ -19,6 +19,6 @@ afterEach(() => {
 
 it('renders without crashing', () => {
   act(() => {
-    render(<App />, container);
+    render(<Home />, container);
   });
 });
